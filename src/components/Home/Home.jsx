@@ -45,10 +45,9 @@ export default function Home() {
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-5xl font-semibold tracking-tight text-white sm:text-7xl">WE REPAIR APPLIANCES A/C UNITS & MORE</h2>
+          <h2 className="text-5xl font-semibold tracking-tight text-white sm:text-7xl">Fast & Reliable AC, Fridge & Washing Machine Repair</h2>
           <p className="mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-            fugiat veniam occaecat fugiat.
+            AC not cooling, fridge leaking, or washing machine stuck? Perfect Refrigeration fixes it all. We service all brands, from home appliances to commercial units. Fast, doorstep repair starting at just ₹199.
           </p>
         </div>
         <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
