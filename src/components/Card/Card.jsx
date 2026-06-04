@@ -6,7 +6,7 @@ const services = [
     id: 1,
     title: 'Complete Diagnostics',
     description: 'Fast and accurate issue detection for all major appliance brands using advanced tools.',
-    image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=600&q=80',
+    image: '/Complete Refrigerator Diagnostics.png',
     phone: '+917506320321'
   },
   {
