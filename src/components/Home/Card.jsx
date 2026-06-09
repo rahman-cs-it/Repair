@@ -6,63 +6,63 @@ const services = [
     id: 1,
     title: 'Complete Diagnostics',
     description: 'Fast and accurate issue detection for all major appliance brands using advanced tools.',
-    image: '/Complete Refrigerator Diagnostics.png',
+    image: '/Complete Refrigerator Diagnostics.jpg',
     phone: '+917506320321'
   },
   {
     id: 2,
     title: 'Cooling & Temperature',
     description: 'Fixing fridges and ACs that are not cooling, overcooling, or freezing improperly.',
-    image: 'https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?auto=format&fit=crop&w=600&q=80',
+    image: '/Cooling & Temperature Issues.jpg',
     phone: '+917506320321'
   },
   {
     id: 3,
     title: 'Compressor & Motors',
     description: 'Expert repair or replacement for faulty compressors, fan motors, and condenser units.',
-    image: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80',
+    image: '/Compressor & Motor Repairs.jpg',
     phone: '+917506320321'
   },
   {
     id: 4,
     title: 'Gas Charging & Leaks',
     description: 'Safe refrigerant top-ups, precise leak detection, and durable coil repairs.',
-    image: 'https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=600&q=80',
+    image: '/Gas Charging & Leak Repair.jpg',
     phone: '+917506320321'
   },
   {
     id: 5,
     title: 'Thermostat & Sensors',
     description: 'Resolving inaccurate temperature readings and replacing faulty electronic sensors.',
-    image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=600&q=80',
+    image: '/Thermostat & Sensor Replacement.jpg',
     phone: '+917506320321'
   },
   {
     id: 6,
     title: 'Seal & Gasket Fixing',
     description: 'Replacing worn-out door seals to prevent cold air leaks and improve power efficiency.',
-    image: 'https://images.unsplash.com/photo-1574686937083-d5d4d98a287b?auto=format&fit=crop&w=600&q=80',
+    image: '/Door Seal & Gasket Replacement.jpg',
     phone: '+917506320321'
   },
   {
     id: 7,
     title: 'Water Leakage Solutions',
     description: 'Fixing internal clogs, drainage issues, and ice buildup problems.',
-    image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80',
+    image: '/Water Leakage Solutions.jpg',
     phone: '+917506320321'
   },
   {
     id: 8,
     title: 'Electrical & PCB Repairs',
     description: 'Handling electronic control boards, switches, and complex wiring problems.',
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80',
+    image: '/Electrical & PCB Repairs.jpg',
     phone: '+917506320321'
   },
   {
     id: 9,
     title: 'Preventive Maintenance',
     description: 'Regular check-ups to keep your appliances running smoothly and efficiently.',
-    image: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=600&q=80',
+    image: '/Preventive Maintenance.jpg',
     phone: '+917506320321'
   },
   
@@ -72,21 +72,21 @@ const services = [
     id: 10,
     title: 'AC Deep Cleaning',
     description: 'Comprehensive cooling coil cleaning, filter replacement, and airflow optimization.',
-    image: 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=600&q=80',
+    image: '/AC Deep Cleaning.jpg',
     phone: '+917506320321'
   },
   {
     id: 11,
     title: 'Washing Machine Drum Repair',
     description: 'Fixing washers that won’t spin, vibrate excessively, or make loud grinding noises.',
-    image: 'https://images.unsplash.com/photo-1626806819282-2c1dc01a5e0c?auto=format&fit=crop&w=600&q=80',
+    image: '/Washing Machine Drum Repair.jpg',
     phone: '+917506320321'
   },
   {
     id: 12,
     title: 'Appliance Installation',
     description: 'Safe and secure uninstallation and reinstallation of heavy home appliances.',
-    image: 'https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=600&q=80',
+    image: '/Appliance Installation.jpg',
     phone: '+917506320321'
   }
 ];

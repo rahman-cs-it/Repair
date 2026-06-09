@@ -1,4 +1,8 @@
-import Card from '../Card/Card'
+import ApplianceTypes from './ApplianceTypes'
+import Card from './Card'
+import HaboutUs from './HaboutUs'
+import TestimonialsAndCTA from './TestimonialsAndCTA'
+import WhyChooseUs from './WhyChooseUs'
 export default function Home() {
   return (
     <>
@@ -7,7 +11,7 @@ export default function Home() {
       <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32 h-screen flex items-center">
         <img
           alt="Perfect Refrigeration technician repairing a stainless steel refrigerator compressor in a home kitchen"
-          src="/opacity_reduced_another_50%.png"
+          src="/Compressed_Home_img.jpg"
           className="absolute inset-0 -z-10 size-full object-cover object-center md:object-center"
         />
         <div className="mx-auto max-w-7xl px-6 lg:px-8 w-full">
@@ -37,7 +41,11 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <ApplianceTypes />
       <Card />
+      <WhyChooseUs />
+      <HaboutUs />
+      <TestimonialsAndCTA />
     </>
 
   )

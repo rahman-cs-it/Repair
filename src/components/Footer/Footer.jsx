@@ -6,11 +6,11 @@ function Footer() {
 
             <nav className="flex justify-center flex-wrap gap-6 text-gray-500 font-medium">
                 <a className="hover:text-gray-900" href="#">Home</a>
-                <a className="hover:text-gray-900" href="#">About</a>
                 <a className="hover:text-gray-900" href="#">Services</a>
-                <a className="hover:text-gray-900" href="#">Media</a>
-                <a className="hover:text-gray-900" href="#">Gallery</a>
+                <a className="hover:text-gray-900" href="#">Booking</a>
+                <a className="hover:text-gray-900" href="#">About</a>
                 <a className="hover:text-gray-900" href="#">Contact</a>
+                <a className="hover:text-gray-900" href="#">Gallery</a>
             </nav>
 
             <div className="flex justify-center space-x-5">

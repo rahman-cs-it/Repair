@@ -62,7 +62,7 @@ export default function Header() {
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
+          <a href="" className="text-sm/6 font-semibold text-gray-900">
             Home
           </a>
           <Popover className="relative">
@@ -110,13 +110,13 @@ export default function Header() {
           </Popover>
 
           <a href="#" className="text-sm/6 font-semibold text-gray-900">
+            Booking
+          </a>
+          <a href="#" className="text-sm/6 font-semibold text-gray-900">
             About
           </a>
           <a href="#" className="text-sm/6 font-semibold text-gray-900">
             Contact
-          </a>
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
-            Booking
           </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -178,6 +178,12 @@ export default function Header() {
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
+                  Booking
+                </a>
+                <a
+                  href="#"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                >
                   About
                 </a>
                 <a
@@ -185,12 +191,6 @@ export default function Header() {
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   Contact
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                >
-                  Booking
                 </a>
               </div>
               <div className="py-6">
