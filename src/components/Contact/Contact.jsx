@@ -1,17 +1,15 @@
 import React from 'react'
-import HaboutUs from '../Home/HaboutUs'
-import Card from '../Home/Card'
+import ContactSection from './ContactSection'
 // import TestimonialsAndCTA from '../Home/TestimonialsAndCTAb'
 import CallToAction from '../Home/CallToAction'
 
-function Services() {
+function Contact() {
   return (
     <div>
-        <HaboutUs />
-        <Card />
+        <ContactSection />
         <CallToAction />
     </div>
   )
 }
 
-export default Services
+export default Contact  

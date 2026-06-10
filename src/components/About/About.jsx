@@ -1,17 +1,19 @@
 import React from 'react'
 import HaboutUs from '../Home/HaboutUs'
-import Card from '../Home/Card'
+import OurJourney from './OurJourney'
+import MissionVision from './MissionVision'
 // import TestimonialsAndCTA from '../Home/TestimonialsAndCTAb'
 import CallToAction from '../Home/CallToAction'
 
-function Services() {
+function About() {
   return (
     <div>
         <HaboutUs />
-        <Card />
+        <OurJourney />
+        <MissionVision />
         <CallToAction />
     </div>
   )
 }
 
-export default Services
+export default About

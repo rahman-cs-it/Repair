@@ -1,4 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // 1. Imported Link for fast SPA routing
+
+// 2. Extracted the checkmark SVG for cleaner bullet points
+const CheckIcon = () => (
+  <svg className="h-6 w-5 flex-none text-blue-600" viewBox="0 0 20 20" fill="currentColor">
+    <path fillRule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clipRule="evenodd" />
+  </svg>
+);
 
 export default function HaboutUs() {
   return (
@@ -12,12 +20,14 @@ export default function HaboutUs() {
             <img
               src="/Haboutus3.jpg"
               alt="Technician explaining appliance repair process to a homeowner"
+              loading="lazy" // 3. Added lazy loading for performance
               className="w-4/5 rounded-2xl bg-slate-50 object-cover shadow-lg h-[350px] sm:h-[450px]"
             />
             {/* Front Image (Bottom Right) */}
             <img
               src="/Haboutus2.jpg"
               alt="Perfect Refrigeration expert working on a compressor"
+              loading="lazy" // 3. Added lazy loading for performance
               className="absolute -bottom-12 -right-4 sm:right-12 w-3/5 rounded-2xl border-8 border-white bg-white object-cover shadow-2xl h-[250px] sm:h-[300px]"
             />
           </div>
@@ -57,33 +67,27 @@ export default function HaboutUs() {
             {/* Bullet Points */}
             <ul className="mt-8 space-y-4 text-slate-600">
               <li className="flex gap-x-3">
-                <svg className="h-6 w-5 flex-none text-blue-600" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clipRule="evenodd" />
-                </svg>
+                <CheckIcon />
                 Servicing all major domestic and commercial appliance brands.
               </li>
               <li className="flex gap-x-3">
-                <svg className="h-6 w-5 flex-none text-blue-600" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clipRule="evenodd" />
-                </svg>
+                <CheckIcon />
                 Transparent pricing with zero hidden charges or surprise fees.
               </li>
               <li className="flex gap-x-3">
-                <svg className="h-6 w-5 flex-none text-blue-600" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clipRule="evenodd" />
-                </svg>
+                <CheckIcon />
                 100% genuine spare parts backed by our post-repair warranty.
               </li>
             </ul>
 
             {/* CTA Button */}
             <div className="mt-10 flex">
-              <a
-                href="#contact"
+              <Link
+                to="/about"
                 className="rounded-md bg-blue-600 px-8 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-colors"
               >
                 Learn More About Us
-              </a>
+              </Link>
             </div>
 
           </div>

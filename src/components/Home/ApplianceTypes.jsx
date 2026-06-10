@@ -1,47 +1,60 @@
 import React from 'react';
 
+// 1. Extracted the SVG icon into a reusable mini-component for cleaner code
+const PhoneIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
+    <path fillRule="evenodd" d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.223.716A1.5 1.5 0 0118 15.352V16.5a1.5 1.5 0 01-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 012.43 8.326 13.019 13.019 0 012 5V3.5z" clipRule="evenodd" />
+  </svg>
+);
+
 const appliances = [
   {
     id: 1,
     name: 'Single & Double Door Fridges',
+    shortName: 'Fridge', // Added for better button text
     description: 'Expert troubleshooting for standard cooling units. We fix compressor issues, gas leaks, and thermostat failures quickly.',
     image: '/Double Door Fridges.jpg',
-    phone: '+919876543210'
+    phone: '+917506320321'
   },
   {
     id: 2,
     name: 'Side-By-Side Refrigerators',
+    shortName: 'Fridge',
     description: 'Specialized care for advanced, multi-door fridge models, including ice maker repairs and digital control panel fixes.',
     image: '/Side-By-Side Refrigerators.jpg',
-    phone: '+919876543210'
+    phone: '+917506320321'
   },
   {
     id: 3,
     name: 'Split & Inverter ACs',
+    shortName: 'AC',
     description: 'Comprehensive servicing, deep coil cleaning, and complex PCB repair for modern, energy-efficient split air conditioners.',
-    image: '/Split & Inverter Acs.jpg',
-    phone: '+919876543210'
+    image: '/Split & Inverter ACs.jpg',
+    phone: '+917506320321'
   },
   {
     id: 4,
     name: 'Window Air Conditioners',
+    shortName: 'AC',
     description: 'Fast, reliable fixes for traditional window units. We handle gas charging, fan motor replacements, and heavy noise issues.',
     image: '/Window Air Conditioners.jpg',
-    phone: '+919876543210'
+    phone: '+917506320321'
   },
   {
     id: 5,
     name: 'Front-Load Washers',
+    shortName: 'Washer',
     description: 'Precision repair for front-loading washing machines, resolving drum alignment, drainage faults, and electronic board errors.',
     image: '/Front-Load Washers.jpg',
-    phone: '+919876543210'
+    phone: '+917506320321'
   },
   {
     id: 6,
     name: 'Top-Load Washers',
+    shortName: 'Washer',
     description: 'Quick solutions for top-loading washers. We fix agitator problems, spin cycle failures, and water inlet blockages.',
     image: '/Top-Load Washers.jpg',
-    phone: '+919876543210'
+    phone: '+917506320321'
   }
 ];
 
@@ -61,12 +74,10 @@ export default function ApplianceTypes() {
         </div>
 
         {/* Appliance Grid */}
-        {/* Adjusted gap-y-24 to make room for the floating rectangles */}
         <div className="grid grid-cols-1 gap-x-8 gap-y-24 md:grid-cols-2 lg:grid-cols-3">
           {appliances.map((appliance) => (
             <div 
               key={appliance.id} 
-              // Added pt-36 so the wider image doesn't cover the title
               className="relative flex flex-col items-center rounded-2xl bg-white p-6 pt-36 text-center shadow-sm ring-1 ring-slate-200 transition-all hover:shadow-lg"
             >
               {/* Floating Rectangular Image */}
@@ -74,6 +85,7 @@ export default function ApplianceTypes() {
                 <img
                   src={appliance.image}
                   alt={appliance.name}
+                  loading="lazy" // 2. Added Lazy Loading for massive performance boost
                   className="h-full w-full object-cover"
                 />
               </div>
@@ -91,11 +103,8 @@ export default function ApplianceTypes() {
                 href={`tel:${appliance.phone}`}
                 className="mt-auto flex w-full items-center justify-center gap-2 rounded-xl bg-blue-600 py-3 text-sm font-semibold text-white transition-colors hover:bg-blue-500 shadow-sm"
               >
-                {/* Phone Icon */}
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
-                  <path fillRule="evenodd" d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.223.716A1.5 1.5 0 0118 15.352V16.5a1.5 1.5 0 01-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 012.43 8.326 13.019 13.019 0 012 5V3.5z" clipRule="evenodd" />
-                </svg>
-                Book {appliance.name.split(' ')[0]} Repair
+                <PhoneIcon /> {/* Used the extracted icon component */}
+                Book {appliance.shortName} Repair {/* 3. Uses the new shortName for perfect grammar */}
               </a>
             </div>
           ))}
