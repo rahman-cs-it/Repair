@@ -29,7 +29,7 @@ const appliances = [
     name: 'Split & Inverter ACs',
     shortName: 'AC',
     description: 'Comprehensive servicing, deep coil cleaning, and complex PCB repair for modern, energy-efficient split air conditioners.',
-    image: '/Split & Inverter ACs.jpg',
+    image: '/Split_&_Inverter_Acs.jpg',
     phone: '+917506320321'
   },
   {
