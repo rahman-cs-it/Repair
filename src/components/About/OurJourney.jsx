@@ -25,10 +25,12 @@ export default function OurJourney() {
             {/* Main Image */}
             <div className="aspect-[4/3] sm:aspect-[3/4] lg:aspect-[4/5] overflow-hidden rounded-2xl shadow-xl bg-slate-200">
               <img
-                src="/Ourjourney.jpg" // Add your generated image here
+                src="/Ourjourney.webp" // Add your generated image here
                 alt="Experienced Perfect Refrigeration technician smiling"
                 loading="lazy" // 3. Performance boost
                 className="h-full w-full object-cover object-center"
+                width="400"
+                height="400"
               />
             </div>
 

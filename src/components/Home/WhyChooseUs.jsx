@@ -76,7 +76,7 @@ export default function WhyChooseUs() {
   return (
     <div className="bg-gray-900 py-24 sm:py-32 border-t border-gray-800">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        
+
         {/* Header Section */}
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-base font-semibold leading-7 text-blue-500 uppercase tracking-wide">
@@ -92,27 +92,27 @@ export default function WhyChooseUs() {
 
         {/* Features Grid - New Card Layout */}
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-3">
+          <ul className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-3 list-none p-0">
             {features.map((feature) => (
-              <div 
-                key={feature.name} 
+              <li
+                key={feature.name}
                 className="relative flex flex-col rounded-2xl bg-gray-800/50 p-8 shadow-sm ring-1 ring-white/10 transition-all hover:bg-gray-800 hover:ring-blue-500/50"
               >
-                {/* Icon Container with subtle glow */}
+                {/* Icon Container */}
                 <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-lg bg-blue-500/10 ring-1 ring-blue-500/20 shadow-[0_0_15px_rgba(59,130,246,0.1)]">
-                  <feature.icon /> {/* 3. Dynamically rendering the component here */}
+                  <feature.icon />
                 </div>
-                
+
                 {/* Text Content */}
-                <dt className="text-xl font-semibold leading-7 text-white mb-3">
+                <h3 className="text-xl font-semibold leading-7 text-white mb-3">
                   {feature.name}
-                </dt>
-                <dd className="flex flex-auto flex-col text-base leading-7 text-gray-400">
-                  <p className="flex-auto">{feature.description}</p>
-                </dd>
-              </div>
+                </h3>
+                <p className="flex-auto text-base leading-7 text-gray-400">
+                  {feature.description}
+                </p>
+              </li>
             ))}
-          </dl>
+          </ul>
         </div>
 
       </div>

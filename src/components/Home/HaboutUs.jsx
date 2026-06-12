@@ -13,22 +13,26 @@ export default function HaboutUs() {
     <div className="overflow-hidden bg-white py-24 sm:py-32" id="about">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-16 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center">
-          
+
           {/* Left Column: Overlapping Images */}
           <div className="relative lg:order-first order-last pt-12 lg:pt-0">
             {/* Back Image (Top Left) */}
             <img
-              src="/Haboutus3.jpg"
+              src="/Haboutus3.webp"
               alt="Technician explaining appliance repair process to a homeowner"
               loading="lazy" // 3. Added lazy loading for performance
               className="w-4/5 rounded-2xl bg-slate-50 object-cover shadow-lg h-[350px] sm:h-[450px]"
+              width="800"
+              height="450"
             />
             {/* Front Image (Bottom Right) */}
             <img
-              src="/Haboutus2.jpg"
+              src="/Haboutus2.webp"
               alt="Perfect Refrigeration expert working on a compressor"
               loading="lazy" // 3. Added lazy loading for performance
               className="absolute -bottom-12 -right-4 sm:right-12 w-3/5 rounded-2xl border-8 border-white bg-white object-cover shadow-2xl h-[250px] sm:h-[300px]"
+              width="480"
+              height="300"
             />
           </div>
 
@@ -52,7 +56,7 @@ export default function HaboutUs() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
                   </svg>
                 </div>
-                <div className="text-base font-semibold text-slate-900">Certified<br/>Professionals</div>
+                <div className="text-base font-semibold text-slate-900">Certified<br />Professionals</div>
               </div>
               <div className="flex items-center gap-4">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-blue-100">
@@ -60,7 +64,7 @@ export default function HaboutUs() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <div className="text-base font-semibold text-slate-900">Same-Day<br/>Resolution</div>
+                <div className="text-base font-semibold text-slate-900">Same-Day<br />Resolution</div>
               </div>
             </div>
 

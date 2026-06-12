@@ -14,15 +14,18 @@ export default function Home() {
     <>
       {/* Hero Section */}
       <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32 h-screen flex items-center">
-        
+
         {/* Background Image */}
         <img
           alt="Perfect Refrigeration technician repairing a stainless steel refrigerator compressor in a home kitchen"
           src="/Compressed_Home_img.jpg"
           // We intentionally DO NOT lazy load the hero image for faster perceived loading
           className="absolute inset-0 -z-20 size-full object-cover object-center md:object-center"
+          width="1920"
+          height="1080"
+          fetchpriority="high"
         />
-        
+
         {/* 3. Added a subtle dark overlay so the white text is always perfectly readable */}
         <div className="absolute inset-0 -z-10 bg-black/50 mix-blend-multiply" aria-hidden="true" />
 
@@ -37,7 +40,7 @@ export default function Home() {
 
             {/* Action Buttons */}
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
-              
+
               {/* External/Phone Links stay as <a> tags */}
               <a
                 href="tel:+917506320321"
@@ -45,7 +48,7 @@ export default function Home() {
               >
                 Call Now
               </a>
-              
+
               {/* 1. Internal Navigation uses React Router <Link> */}
               <Link
                 to="/booking"

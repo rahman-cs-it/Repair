@@ -16,30 +16,30 @@ export default function Header() {
   const closeMenu = () => setMobileMenuOpen(false)
 
   // Reusable dynamic class generator for active navigation links
-  const getLinkClass = ({ isActive }) => 
-    `text-sm/6 font-semibold transition-colors ${
-      isActive ? 'text-blue-600 font-bold' : 'text-gray-900 hover:text-blue-600'
+  const getLinkClass = ({ isActive }) =>
+    `text-sm/6 font-semibold transition-colors ${isActive ? 'text-blue-600 font-bold' : 'text-gray-900 hover:text-blue-600'
     }`;
 
-  const getMobileLinkClass = ({ isActive }) => 
-    `-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold transition-colors ${
-      isActive ? 'text-blue-600 bg-blue-50/50 font-bold' : 'text-gray-900 hover:bg-slate-50'
+  const getMobileLinkClass = ({ isActive }) =>
+    `-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold transition-colors ${isActive ? 'text-blue-600 bg-blue-50/50 font-bold' : 'text-gray-900 hover:bg-slate-50'
     }`;
 
   return (
     <header className="bg-white sticky top-0 z-50 shadow-sm border-b border-slate-100">
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
-        
+
         {/* LOGO AREA (DESKTOP) */}
         <div className="flex lg:flex-1">
           <Link to="/" className="-m-1.5 p-1.5 flex items-center gap-2 focus:outline-none">
             <span className="sr-only">FrostFix Appliances</span>
             {/* Added the img tag with src here */}
             <img
-              src="/Frostfixicon.jpg" 
+              src="/Frostfixicon2.webp"
               alt="FrostFix Appliances Logo"
-              className="h-14 w-auto object-contain"
-              // Note: We DO NOT add loading="lazy" here because this logo is at the very top of the page
+              className="h-12 w-auto object-contain"
+              width="400"
+              height="48"
+            // Note: We DO NOT add loading="lazy" here because this logo is at the very top of the page
             />
             <span className="font-bold text-xl text-slate-900 hidden sm:block">FrostFix Appliances</span>
           </Link>
@@ -91,9 +91,11 @@ export default function Header() {
               <span className="sr-only">FrostFix Appliances</span>
               {/* Added the img tag with src here for mobile as well */}
               <img
-                src="/Frostfixicon.jpg"
+                src="/Frostfixicon.webp"
                 alt="FrostFix Appliances Logo"
                 className="h-8 w-auto object-contain"
+                width="400"
+                height="32"
               />
               <span className="font-bold text-lg text-slate-900">FrostFix</span>
             </Link>

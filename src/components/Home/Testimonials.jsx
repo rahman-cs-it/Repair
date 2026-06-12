@@ -41,7 +41,7 @@ export default function Testimonials() {
   return (
     <section className="bg-slate-50 py-24 sm:py-32 relative z-10" id="testimonials">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        
+
         <div className="mx-auto max-w-2xl text-center mb-16">
           <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
             What Mumbai Families Say About Us
@@ -63,6 +63,8 @@ export default function Testimonials() {
                   src={testimonial.image}
                   alt={testimonial.author}
                   loading="lazy"
+                  width="48"
+                  height="48"
                 />
                 <div>
                   <h3 className="text-sm font-semibold leading-6 text-slate-900">{testimonial.author}</h3>

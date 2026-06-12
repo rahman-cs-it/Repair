@@ -13,7 +13,7 @@ const appliances = [
     name: 'Single & Double Door Fridges',
     shortName: 'Fridge', // Added for better button text
     description: 'Expert troubleshooting for standard cooling units. We fix compressor issues, gas leaks, and thermostat failures quickly.',
-    image: '/Double Door Fridges.jpg',
+    image: '/Double Door Fridges.webp',
     phone: '+917506320321'
   },
   {
@@ -21,7 +21,7 @@ const appliances = [
     name: 'Side-By-Side Refrigerators',
     shortName: 'Fridge',
     description: 'Specialized care for advanced, multi-door fridge models, including ice maker repairs and digital control panel fixes.',
-    image: '/Side-By-Side Refrigerators.jpg',
+    image: '/Side-By-Side Refrigerators.webp',
     phone: '+917506320321'
   },
   {
@@ -29,7 +29,7 @@ const appliances = [
     name: 'Split & Inverter ACs',
     shortName: 'AC',
     description: 'Comprehensive servicing, deep coil cleaning, and complex PCB repair for modern, energy-efficient split air conditioners.',
-    image: '/Split_&_Inverter_Acs.jpg',
+    image: '/Split_&_Inverter_Acs.webp',
     phone: '+917506320321'
   },
   {
@@ -37,7 +37,7 @@ const appliances = [
     name: 'Window Air Conditioners',
     shortName: 'AC',
     description: 'Fast, reliable fixes for traditional window units. We handle gas charging, fan motor replacements, and heavy noise issues.',
-    image: '/Window Air Conditioners.jpg',
+    image: '/Window Air Conditioners.webp',
     phone: '+917506320321'
   },
   {
@@ -45,7 +45,7 @@ const appliances = [
     name: 'Front-Load Washers',
     shortName: 'Washer',
     description: 'Precision repair for front-loading washing machines, resolving drum alignment, drainage faults, and electronic board errors.',
-    image: '/Front-Load Washers.jpg',
+    image: '/Front-Load Washers.webp',
     phone: '+917506320321'
   },
   {
@@ -53,7 +53,7 @@ const appliances = [
     name: 'Top-Load Washers',
     shortName: 'Washer',
     description: 'Quick solutions for top-loading washers. We fix agitator problems, spin cycle failures, and water inlet blockages.',
-    image: '/Top-Load Washers.jpg',
+    image: '/Top-Load Washers.webp',
     phone: '+917506320321'
   }
 ];
@@ -62,7 +62,7 @@ export default function ApplianceTypes() {
   return (
     <div className="bg-slate-50 py-24 sm:py-32" id="appliance-types">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        
+
         {/* Section Header */}
         <div className="mx-auto max-w-2xl text-center mb-24">
           <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
@@ -76,8 +76,8 @@ export default function ApplianceTypes() {
         {/* Appliance Grid */}
         <div className="grid grid-cols-1 gap-x-8 gap-y-24 md:grid-cols-2 lg:grid-cols-3">
           {appliances.map((appliance) => (
-            <div 
-              key={appliance.id} 
+            <div
+              key={appliance.id}
               className="relative flex flex-col items-center rounded-2xl bg-white p-6 pt-36 text-center shadow-sm ring-1 ring-slate-200 transition-all hover:shadow-lg"
             >
               {/* Floating Rectangular Image */}
@@ -87,6 +87,8 @@ export default function ApplianceTypes() {
                   alt={appliance.name}
                   loading="lazy" // 2. Added Lazy Loading for massive performance boost
                   className="h-full w-full object-cover"
+                  width="400"
+                  height="400"
                 />
               </div>
 

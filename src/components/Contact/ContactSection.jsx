@@ -24,10 +24,10 @@ export default function ContactSection() {
   return (
     <div className="bg-white py-24 sm:py-32" id="contact">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        
+
         {/* --- TOP PART: INTRO SPLIT GRID --- */}
         <div className="grid grid-cols-1 gap-x-16 gap-y-12 items-center lg:grid-cols-2 bg-slate-50/50 rounded-3xl p-8 sm:p-12 shadow-sm ring-1 ring-slate-100">
-          
+
           {/* Content Left */}
           <div>
             <p className="text-sm font-semibold leading-7 text-blue-600 uppercase tracking-widest">
@@ -44,10 +44,12 @@ export default function ContactSection() {
           {/* Image Right */}
           <div className="w-full h-64 sm:h-80 overflow-hidden rounded-2xl shadow-md bg-slate-100">
             <img
-              src="/Contactsection.jpg" // Reuses your generated technician style photo safely
+              src="/Contactsection.webp" // Reuses your generated technician style photo safely
               alt="Perfect Refrigeration expert ready to assist with appliance inquiries"
               loading="lazy"
               className="w-full h-full object-cover object-center"
+              width="400"
+              height="400"
             />
           </div>
 
@@ -63,11 +65,11 @@ export default function ContactSection() {
           </h3>
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3 text-left">
-            
+
             {/* Card 1: Location */}
-            <a 
-              href="https://maps.google.com/?q=Savera+Bldg,+Veera+Desai+Road+Link,+Andheri+West,+Mumbai" 
-              target="_blank" 
+            <a
+              href="https://maps.google.com/?q=Savera+Bldg,+Veera+Desai+Road+Link,+Andheri+West,+Mumbai"
+              target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col sm:flex-row items-start gap-5 rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200 transition-all hover:shadow-md hover:ring-blue-500/30"
             >
@@ -86,7 +88,7 @@ export default function ContactSection() {
             </a>
 
             {/* Card 2: Email */}
-            <a 
+            <a
               href="mailto:info@perfect-refrigeration.com"
               className="flex flex-col sm:flex-row items-start gap-5 rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200 transition-all hover:shadow-md hover:ring-blue-500/30"
             >
@@ -102,7 +104,7 @@ export default function ContactSection() {
             </a>
 
             {/* Card 3: Contact */}
-            <a 
+            <a
               href="tel:+917506320321"
               className="flex flex-col sm:flex-row items-start gap-5 rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200 transition-all hover:shadow-md hover:ring-blue-500/30"
             >

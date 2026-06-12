@@ -13,87 +13,87 @@ const services = [
     id: 1,
     title: 'Complete Diagnostics',
     description: 'Fast and accurate issue detection for all major appliance brands using advanced tools.',
-    image: '/Complete Refrigerator Diagnostics.jpg',
+    image: '/Complete Refrigerator Diagnostics.webp',
     phone: '+917506320321'
   },
   {
     id: 2,
     title: 'Cooling & Temperature',
     description: 'Fixing fridges and ACs that are not cooling, overcooling, or freezing improperly.',
-    image: '/Cooling & Temperature Issues.jpg',
+    image: '/Cooling & Temperature Issues.webp',
     phone: '+917506320321'
   },
   {
     id: 3,
     title: 'Compressor & Motors',
     description: 'Expert repair or replacement for faulty compressors, fan motors, and condenser units.',
-    image: '/Compressor & Motor Repairs.jpg',
+    image: '/Compressor & Motor Repairs.webp',
     phone: '+917506320321'
   },
   {
     id: 4,
     title: 'Gas Charging & Leaks',
     description: 'Safe refrigerant top-ups, precise leak detection, and durable coil repairs.',
-    image: '/Gas Charging & Leak Repair.jpg',
+    image: '/Gas Charging & Leak Repair.webp',
     phone: '+917506320321'
   },
   {
     id: 5,
     title: 'Thermostat & Sensors',
     description: 'Resolving inaccurate temperature readings and replacing faulty electronic sensors.',
-    image: '/Thermostat & Sensor Replacement.jpg',
+    image: '/Thermostat & Sensor Replacement.webp',
     phone: '+917506320321'
   },
   {
     id: 6,
     title: 'Seal & Gasket Fixing',
     description: 'Replacing worn-out door seals to prevent cold air leaks and improve power efficiency.',
-    image: '/Door Seal & Gasket Replacement.jpg',
+    image: '/Door Seal & Gasket Replacement.webp',
     phone: '+917506320321'
   },
   {
     id: 7,
     title: 'Water Leakage Solutions',
     description: 'Fixing internal clogs, drainage issues, and ice buildup problems.',
-    image: '/Water Leakage Solutions.jpg',
+    image: '/Water Leakage Solutions.webp',
     phone: '+917506320321'
   },
   {
     id: 8,
     title: 'Electrical & PCB Repairs',
     description: 'Handling electronic control boards, switches, and complex wiring problems.',
-    image: '/Electrical & PCB Repairs.jpg',
+    image: '/Electrical & PCB Repairs.webp',
     phone: '+917506320321'
   },
   {
     id: 9,
     title: 'Preventive Maintenance',
     description: 'Regular check-ups to keep your appliances running smoothly and efficiently.',
-    image: '/Preventive Maintenance.jpg',
+    image: '/Preventive Maintenance.webp',
     phone: '+917506320321'
   },
-  
+
   /* --- Bonus Cards for AC & Washing Machine --- */
-  
+
   {
     id: 10,
     title: 'AC Deep Cleaning',
     description: 'Comprehensive cooling coil cleaning, filter replacement, and airflow optimization.',
-    image: '/AC Deep Cleaning.jpg',
+    image: '/AC Deep Cleaning.webp',
     phone: '+917506320321'
   },
   {
     id: 11,
     title: 'Washing Machine Drum Repair',
     description: 'Fixing washers that won’t spin, vibrate excessively, or make loud grinding noises.',
-    image: '/Washing Machine Drum Repair.jpg',
+    image: '/Washing Machine Drum Repair.webp',
     phone: '+917506320321'
   },
   {
     id: 12,
     title: 'Appliance Installation',
     description: 'Safe and secure uninstallation and reinstallation of heavy home appliances.',
-    image: '/Appliance Installation.jpg',
+    image: '/Appliance Installation.webp',
     phone: '+917506320321'
   }
 ];
@@ -102,7 +102,7 @@ export default function Card() {
   return (
     <div className="bg-slate-50 py-24 sm:py-32" id="services">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        
+
         {/* Section Heading */}
         <div className="mx-auto max-w-2xl text-center mb-24">
           <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
@@ -117,10 +117,10 @@ export default function Card() {
         {/* We use gap-y-24 to leave vertical space for the floating images */}
         <div className="grid grid-cols-1 gap-x-8 gap-y-24 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
-            
+
             /* Individual Service Card */
-            <div 
-              key={service.id} 
+            <div
+              key={service.id}
               className="relative flex flex-col rounded-2xl bg-white p-6 pt-36 shadow-sm ring-1 ring-slate-200 transition-all hover:shadow-lg"
             >
               {/* Floating Image */}
@@ -130,6 +130,8 @@ export default function Card() {
                   alt={service.title}
                   loading="lazy" // 2. HUGE performance boost right here
                   className="h-full w-full object-cover"
+                  width="400"
+                  height="400"
                 />
               </div>
 
