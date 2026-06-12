@@ -71,6 +71,9 @@ export default function Header() {
           <NavLink to="/contact" className={getLinkClass}>
             Contact
           </NavLink>
+          <NavLink to="/blog" className={getLinkClass}>
+            Blog
+          </NavLink>
         </div>
 
         {/* DESKTOP CTA BUTTON */}
@@ -91,7 +94,7 @@ export default function Header() {
               <span className="sr-only">FrostFix Appliances</span>
               {/* Added the img tag with src here for mobile as well */}
               <img
-                src="/Frostfixicon.webp"
+                src="/Frostfixicon2.webp"
                 alt="FrostFix Appliances Logo"
                 className="h-8 w-auto object-contain"
                 width="400"
@@ -140,6 +143,13 @@ export default function Header() {
                   className={getMobileLinkClass}
                 >
                   Contact
+                </NavLink>
+                <NavLink
+                  to="/blog"
+                  onClick={closeMenu}
+                  className={getMobileLinkClass}
+                >
+                  Blog
                 </NavLink>
               </div>
               <div className="py-6">
