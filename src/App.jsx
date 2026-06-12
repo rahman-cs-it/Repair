@@ -1,5 +1,3 @@
-import { SpeedInsights } from "@vercel/speed-insights/react"
-import { useState } from 'react'
 import Header from './components/Header/Header'
 import Home from './components/Home/Home'
 import Footer from './components/Footer/Footer'
